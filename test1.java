@@ -10,15 +10,28 @@ public class test1 {
         } else  {
             System.out.println(2);
             for(int i = 3; i < n; i++){
-                for(int j = 2;j < i; j++){
+                int j = 2;
+                for(;j < i; j++){
                     if(i % j == 0){
                         break;
-                    } else {
-                        System.out.println(i);
-                        break;
                     }
+                }
+                if(i == j){
+                    System.out.println(i);
                 }
             }
         }
     }
 }
+//   for(int i = 3; i < n; i ++){
+//       boolean checkPrime = true;
+//       for(int j = 2; j < i; j++){
+//           if(i % j  == 0){
+//               checkPrime = false;
+//               break;
+//        }
+//        }
+//       if(checkPrime){
+//           System.out.println(i)
+//        }
+//        }
